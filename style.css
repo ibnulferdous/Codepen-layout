@@ -1,4 +1,112 @@
+/* Base Styling */
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.7);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #1E1F26;
     color: #ffffff;
+    margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.image-max-width {
+    width: 50px;
+}
+
+
+/* Container Div */
+.codepen {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr auto;
+    height: 100vh;
+}
+
+.codepen >* {
+    border: 1px solid white;
+}
+
+
+/* Header part */
+.pen {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+.header-logo img {
+    width: 30px;
+}
+
+.pen-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pen-details h1 {
+    font-size: 2rem;
+}
+
+.pen-details h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #9b9dad;
+}
+
+.pen-details h2 span {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.profile-button {
+    width: 40px;
+    height: 40px;
+    background: url(images/profile-picture.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+/* Editor CSS */
+.code {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+

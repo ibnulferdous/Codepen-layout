@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome, Google fonts etc link up -->
     <script src="https://kit.fontawesome.com/22646529e3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Codepen Layout</title>
 </head>
 <body>
     <!-- Container Div -->
     <div class="codepen">
+
         <!-- Header Part -->
         <header class="pen">
             <!-- Logo Div -->
-            <div class="logo-div">
-                <a href="#">
-                    <img src="images/codepen-logo-white.svg" alt="">
-                </a>
-            </div>
+            <a class="header-logo" href="#">
+                <img class="image-max-width" src="images/codepen-logo-white.svg" alt="">
+            </a>
+
             <!-- Pen Detils -->
             <div class="pen-details">
-                <h1>Untitled</h1>
+                <h1>Untitled <i class="fas fa-pencil-alt fa-xs"></i></h1>
                 <h2>A pen by <span>Ibnul Ferdous</span></h2>
             </div>
+
+
             <!-- Header buttons -->
             <button class="button"><i class="fas fa-heart"></i></button>
             <button class="button"><i class="fas fa-cloud"></i> Save</button>
@@ -32,10 +36,97 @@
                 <span><i class="fas fa-thumbtack"></i></span>
                 <span><i class="fas fa-angle-down"></i></span>
             </button>
-            <a href="#">
-                <img src="images/profile-picture.jpg" alt="">
-            </a>
+            <!-- Profile Picture -->
+            <a class="profile-button" href="#"></a>
         </header>
+
+        <!-- Code editor section -->
+        <section class="code">
+
+            <!-- HTML editor -->
+            <div class="editor">
+                <header class="editor__header">
+                    <button class="button button--small editor__settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <h3 class="editor__heading">HTML</h3>
+                    <button class="button button--small editor__settings">
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                </header>
+
+                <div class="editor__code">
+                    <div class="editor__gutter">
+                        <span class="editor__number">1</span>
+                    </div>
+                </div>
+
+                <textarea class="editor__input"><h1>Hello World!</h1></textarea>
+            </div>
+
+            <!-- CSS editor -->
+            <div class="editor">
+                <header class="editor__header">
+                    <button class="button button--small editor__settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <h3 class="editor__heading">CSS</h3>
+                    <button class="button button--small editor__settings">
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                </header>
+
+                <div class="editor__code">
+                    <div class="editor__gutter">
+                        <span class="editor__number">1</span>
+                    </div>
+                </div>
+
+                <textarea class="editor__input"></textarea>
+            </div>
+
+            <!-- JS editor -->
+            <div class="editor">
+                <header class="editor__header">
+                    <button class="button button--small editor__settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <h3 class="editor__heading">JS</h3>
+                    <button class="button button--small editor__settings">
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                </header>
+
+                <div class="editor__code">
+                    <div class="editor__gutter">
+                        <span class="editor__number">1</span>
+                    </div>
+                </div>
+
+                <textarea class="editor__input">const ibnul = "Coolest!";</textarea>
+            </div>
+        </section>
+
+        <!-- Preview Section -->
+        <section class="preview">
+            <iframe src="https://css-tricks.com/snippets/css/complete-guide-grid/" frameborder="0"></iframe>
+        </section>
+
+        <!-- Footer -->
+        <footer class="setting">
+            <button class="button button--small button--black">Console</button>
+            <button class="button button--small button--black">Assets</button>
+            <button class="button button--small button--black">Shortcuts</button>
+
+            <div class="tagline-div">
+                <div class="logo-div">
+                    <a href="#">
+                        <img class="image-max-width" src="images/codepen-logo-white.svg" alt="">
+                    </a>
+                </div>
+                <a href="#">CodePen: The social development environment.</a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
